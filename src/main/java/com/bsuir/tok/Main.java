@@ -10,6 +10,5 @@ public class Main {
         System.out.println(args[0]);
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
         System.out.println(context.getBean(Controller.class).executeRequest(args[0]));
-        System.out.println(args[0]);
     }
 }

@@ -1,17 +1,15 @@
 package com.bsuir.tok.bean;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.PropertySources;
 import org.springframework.stereotype.Component;
 
-@Component("111")
-@PropertySources(
-    {
-        @PropertySource(value = "classpath:config.properties", ignoreResourceNotFound = true)
-    }
-)
-public class Configuration {
+@Component
+@Configuration
+@PropertySources({@PropertySource(value = "classpath:config.properties", ignoreResourceNotFound = true)})
+public class Config {
 
     @Value("${version}")
     private String version;
