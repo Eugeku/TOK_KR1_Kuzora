@@ -1,16 +1,14 @@
 package com.bsuir.tok.service.util;
 
 import org.apache.commons.lang3.ArrayUtils;
-import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-@Component
 public class StringBitParser {
 
-    public List<List<Integer>> stringToBitArray(String string) {
+    public static List<List<Integer>> stringToBitArray(String string) {
 
         ArrayList<List<Integer>> arrayList = new ArrayList<>();
 
@@ -41,7 +39,7 @@ public class StringBitParser {
         return arrayList;
     }
 
-    public String bitArrayToString(List<List<Integer>> bitArray) {
+    public static String bitArrayToString(List<List<Integer>> bitArray) {
 
         StringBuffer stringToReturn = new StringBuffer();
 

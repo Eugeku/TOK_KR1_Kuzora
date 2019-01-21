@@ -35,7 +35,6 @@ public class Kr1Solution implements ParityEncodable, ParityDecodable {
 
     @Override
     public ParityStorage decodeByParityBit(List<List<Integer>> decodedMessage) {
-
         for (int i = 0; i < decodedMessage.size(); i++) {
             List<Integer> letterEncodingList = decodedMessage.get(i);
             int countOf1Bits = 0;
